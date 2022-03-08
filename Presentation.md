@@ -16,24 +16,31 @@ Le type de la variable sera automatiquement déterminé lorsque le programme ser
 Le dernier standard ECMAScript définit 8 types de données :
 
  - Les 7 types **Primitifs** : 
-    - Booléen (Boolean)
-    - Null
-    - Undefined
-    - Nombre (Number)
+    - Booléen (boolean)
+    - Nul (null)
+    - Indéfini (undefined)
+    - Nombre (number)
     - BigInt (proposition pour ES2020)
     - Chaîne de caractères (String)
-    - Symbole (type introduit avec ECMAScript 6)
+    - Symbole (Symbol, type introduit avec ECMAScript 6)
  - et le type **Objet**
 
 ## 3. Les valeurs primitives
 
 Tous les types, sauf les objets, définissent des valeurs immuables (qu'on ne peut modifier). Ainsi, contrairement au `langage C`, les chaînes de caractères sont immuables en JavaScript. Les valeurs immuables pour chacun de ces types sont appelées « valeurs primitives ».
 
-### 3.1. Le type booléen
+### 3.1. Le type booléen (boolean)
 
-Un booléen représente le résultat d'une assertion logique et peut avoir deux valeurs : `true` (pour le vrai logique) et `false` (pour le faux logique) 
-Visitez le lien Boolean
+Un booléen représente le résultat d'une assertion logique et peut avoir deux valeurs : `true` (pour le vrai logique) et `false` (pour le faux logique).  
+> Visitez le lien [Boolean](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Boolean) pour plus de détails sur la représentation objet de ce type. 
 
+### 3.2. Le type nul (null)
+**Le type nul ne possède qu'une valeur : null.**   
+> Visitez le lien [null](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/null) et [Null](https://developer.mozilla.org/fr/docs/Glossary/Null) pour plus d'informations.
+
+### 3.3. Le type indéfini (undefined)
+**Une variable à laquelle on n'a pas affecté de valeur vaudra undefined.**  
+> Voir [undefined](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/undefined) et [Undefined](https://developer.mozilla.org/fr/docs/Glossary/undefined) pour plus d'informations.
 
 
 
