@@ -15,8 +15,6 @@ Le type de la variable sera automatiquement déterminé lorsque le programme ser
       toto = true;     // et maintenant, toto est un booléen
 ```
 
------
-
 ## 2. Les types de données
 Le dernier standard ECMAScript définit 8 types de données :
 
@@ -30,12 +28,11 @@ Le dernier standard ECMAScript définit 8 types de données :
     - Symbole (Symbol, type introduit avec ECMAScript 6)
  - et le type **Objet**
 
------
-
 ## 3. Les valeurs primitives
 
 Tous les types, sauf les objets, définissent des valeurs immuables (qu'on ne peut modifier). Ainsi, contrairement au `langage C`, les chaînes de caractères sont immuables en JavaScript. Les valeurs immuables pour chacun de ces types sont appelées « valeurs primitives ».
 
+-----
 
 ### 3.1. Le type booléen (boolean)
 
