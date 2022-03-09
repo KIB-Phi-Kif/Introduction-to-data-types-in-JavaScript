@@ -1,6 +1,6 @@
 # Introduction to data types in JavaScript (Written in French)
 
-Ceci est une présentation sur les structures de données en Javascript, qui peut servir de aide-mémoire pour reviser sur les types de données en Javascript.  
+Ceci est une présentation sur les structures de données en Javascript, qui peut servir d'aide-mémoire pour reviser sur les types de données en Javascript.  
 
 ## Recommandation
 
