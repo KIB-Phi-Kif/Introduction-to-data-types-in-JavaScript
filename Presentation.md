@@ -42,8 +42,33 @@ Un booléen représente le résultat d'une assertion logique et peut avoir deux 
 **Une variable à laquelle on n'a pas affecté de valeur vaudra undefined.**  
 > Voir [undefined](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/undefined) et [Undefined](https://developer.mozilla.org/fr/docs/Glossary/undefined) pour plus d'informations.
 
+### 3.4. Le type nombre
+ECMAScript possède deux types numériques natifs : `Number` et `BigInt` (cf. ci-après)  
+
+Le type `Number` est géré pour représenter les nombres : [les nombres flottants à précision double, représentés sur 64 bits, selon le format IEEE 754](https://en.wikipedia.org/wiki/Double-precision_floating-point_format) (les nombres compris entre -(2^53 -1) et 2^53 -1).  
+
+**Il n'y a donc pas de type à part pour représenter les nombres entiers.** En plus de sa capacité à représenter les nombres décimaux, le type nombre possède trois valeurs symboliques :  `+Infinity`, `-Infinity`, et [`NaN`](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/NaN) (Not A Number en anglais, qui signifie « n'est pas un nombre »). 
+
+Afin de vérifier que des valeurs sont supérieures/inférieures à `+/-Infinity`, on peut utiliser les constantes [Number.MAX_VALUE](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_VALUE) et [Number.MIN_VALUE](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_VALUE).  
+
+À partir d'ECMAScript 6, on peut également vérifier si un nombre est/sera compris dans l'intervalle de représentation pour les nombres flottants à précision double en utilisant la méthode [`Number.isSafeInteger()`](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Number/isSafeInteger) ainsi que les valeurs [`Number.MAX_SAFE_INTEGER`](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER) et [`Number.MIN_SAFE_INTEGER`](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_SAFE_INTEGER).  
+
+En dehors de cet intervalle et pour JavaScript, on considère que les nombres ne sont plus représentés correctement. On manipule alors une approximation de la valeur sous forme d'un nombre à virgule flottante à précision double.  
+
+Le type nombre possède un seul entier pouvant être représenté de deux façons différentes : 0 qui peut être représenté par -0 et +0. ("0" étant un alias pour +0). En pratique, cela n'a généralement aucun impact et `+0 === -0` vaut bien `true`. Malgré tout, on peut observer certaines différences quand on divise par zéro :
 
 
+```js
+42 / +0
+// Infinity
+
+42 / -0
+// -Infinity
+```
+
+Dans la plupart des cas, un nombre représente sa propre valeur, malgré tout les [opérateurs binaires](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators) peuvent être utilisés pour représenter plusieurs valeurs booléennes grâce à un seul nombre (on parle alors de [masque de bits](https://fr.wikipedia.org/wiki/Masquage)). Ceci est généralement une mauvaise pratique (lisibilité, maintenabilité) bien que ça puisse être utile lorsqu'on souhaite minimiser le nombre de bits qu'on utilise.
+
+### 3.5. 
 
 
 
