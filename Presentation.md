@@ -34,13 +34,19 @@ Tous les types, sauf les objets, définissent des valeurs immuables (qu'on ne pe
 Un booléen représente le résultat d'une assertion logique et peut avoir deux valeurs : `true` (pour le vrai logique) et `false` (pour le faux logique).  
 > Visitez le lien [Boolean](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Boolean) pour plus de détails sur la représentation objet de ce type. 
 
+-----
+
 ### 3.2. Le type nul (null)
 **Le type nul ne possède qu'une valeur : null.**   
 > Visitez le lien [null](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/null) et [Null](https://developer.mozilla.org/fr/docs/Glossary/Null) pour plus d'informations.
 
+-----
+
 ### 3.3. Le type indéfini (undefined)
 **Une variable à laquelle on n'a pas affecté de valeur vaudra undefined.**  
 > Voir [undefined](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/undefined) et [Undefined](https://developer.mozilla.org/fr/docs/Glossary/undefined) pour plus d'informations.
+
+-----
 
 ### 3.4. Le type nombre
 ECMAScript possède deux types numériques natifs : `Number` et `BigInt` (cf. ci-après)  
@@ -67,6 +73,8 @@ Le type nombre possède un seul entier pouvant être représenté de deux façon
 ```
 
 Dans la plupart des cas, un nombre représente sa propre valeur, malgré tout les [opérateurs binaires](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators) peuvent être utilisés pour représenter plusieurs valeurs booléennes grâce à un seul nombre (on parle alors de [masque de bits](https://fr.wikipedia.org/wiki/Masquage)). Ceci est généralement une mauvaise pratique (lisibilité, maintenabilité) bien que ça puisse être utile lorsqu'on souhaite minimiser le nombre de bits qu'on utilise.
+
+-----
 
 ### 3.5. 
 
