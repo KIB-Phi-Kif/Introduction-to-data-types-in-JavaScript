@@ -4,4 +4,4 @@ Ceci est une présentation sur les structures de données en Javascript, qui peu
 
 ## Recommandation
 
-Lire le document principal **"Presentation.md"**
+Lire le document principal **"Presentation.md[https://github.com/KIB-Phi-Kif/Introduction-to-data-types-in-JavaScript/blob/main/README.md]"**
