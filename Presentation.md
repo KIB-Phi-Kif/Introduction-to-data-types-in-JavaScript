@@ -86,4 +86,4 @@ Dans la plupart des cas, un nombre représente sa propre valeur, malgré tout le
 
 -----
 
-***Le document est en cours de rédaction...
+***Le document est en cours de rédaction...***
